@@ -1,0 +1,126 @@
+.Container {
+  position: relative;
+  background: #f7f7f7;
+  min-width: 320px;
+  height: 100vh;
+  text-align: center;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  padding: 5% 2%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 500px;
+  width: 90%;
+  height: 50%;
+  background: #fff;
+  box-shadow: 0 5px 18px 0 rgba(72, 87, 145, 0.1);
+  border-radius: 8px;
+}
+.Box_wrap {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+.Box_wrap div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.Image {
+  text-align: center;
+}
+.Image img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 167px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Circular Std Bold", Helvetica, sans-serif;
+}
+.title_desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+input {
+  width: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #a3a3a3;
+  min-height: 47px;
+  padding: 6px 16px;
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Circular Std Book", Helvetica, sans-serif;
+  outline: none;
+}
+input:focus {
+  opacity: 1;
+  border-color: #fe26f5 !important;
+}
+form {
+  width: 100%;
+}
+.Button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background: linear-gradient(
+    91.51deg,
+    #fe26f5 0.39%,
+    #b517ff 99.54%
+  ) !important;
+  color: #fff;
+  transition: all ease 0.4s;
+  padding: 0.75em 0;
+  font-size: 16px;
+  line-height: 1.4;
+  border: none;
+  font-family: "Circular Std Bold", Helvetica, sans-serif;
+}
+.Button .text {
+  white-space: normal;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  order: 10;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+}
+.link_text {
+  cursor: pointer;
+  color: #fe26f5;
+}
+.link_text:hover {
+  text-decoration: underline;
+}
+.home_desc {
+  position: absouluterelative;
+  color: #878787;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 26px;
+  width: 100%;
+  text-align: center;
+}
