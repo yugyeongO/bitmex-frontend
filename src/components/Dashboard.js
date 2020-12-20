@@ -1,8 +1,25 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Dashboard.css';
 import icon from './newsletter-adobe-xd.svg'
+import {
+  getMarket,
+  useExchangeDispatch,
+  useExchangeState,
+} from '../context/DashboardContext';
+
 function Dashboard() {
+    const dispatch = useExchangeDispatch();
+    const state = useExchangeState();
+    const { data: realtimeData } = state.realtimeData;
+    useEffect(() => {
+      getMarket(dispatch);
+    }, [dispatch]);
+    if (realtimeData){
+        console.log(realtimeData)
+        // console.log(data)
+  }
+  
     return (
         <div className="Container">
             <header className="Header">
