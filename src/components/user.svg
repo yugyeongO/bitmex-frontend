@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="user" transform="translate(275 -474)">
+    <circle id="타원_4" data-name="타원 4" cx="16" cy="16" r="16" transform="translate(-275 474)" fill="#e2e2e2"/>
+    <g id="icon_user" transform="translate(-267 482)" clip-path="url(#clip-path)">
+      <path id="합치기_1" data-name="합치기 1" d="M0,370v-2c0-2.2,3.6-4,8-4s8,1.8,8,4v2Zm4-12a4,4,0,1,1,4,4A4,4,0,0,1,4,358Z" transform="translate(0 -354)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

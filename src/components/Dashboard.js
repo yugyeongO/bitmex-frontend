@@ -1,12 +1,17 @@
 
 import React, { useEffect } from 'react';
 import './Dashboard.css';
-import icon from './newsletter-adobe-xd.svg'
+import icon from './logo.svg';
+import alarm from './alarm.svg';
+import user from './user.svg';
+
 import {
   getMarket,
   useExchangeDispatch,
   useExchangeState,
 } from '../context/DashboardContext';
+import Chart from './Chart'
+
 
 function Dashboard() {
     const dispatch = useExchangeDispatch();
@@ -26,39 +31,78 @@ function Dashboard() {
                 <img src={icon} alt="logo"/>
                 <nav className="nav">
                 <div>
-                    <i>알림</i>
+                    <i className="btn_icon">
+                        <img src={alarm} alt="alarm"/>
+                    </i>
                 </div>
                 <div>
-                    <i>사용자</i>
+                    <i className="btn_icon">
+                        <img src={user} alt="user"/>
+                    </i>
                 </div>
                 </nav>
             </header>
-            <h1>Dashboard</h1>
+            <h1 className="blind">Dashboard</h1>
             <div className="Card_list">
-				<article className="Card">
-                    contents
-				</article>
-				</div>
+                <article>
+                    <h2 className="title">미실현손익(ROE%)</h2>
+                    <div className="Card">
+                        <span className="label">229.84%</span>
+                        <Chart></Chart>
+                    </div>
+                </article>
+                <article>
+                    <h2 className="title">실현손익</h2>
+                    <div className="Card">
+                        <span className="label">229.84XBT</span>
+                        <Chart></Chart>
+                    </div>
+                </article>
+                <article>
+                    <h2 className="title">최근체결가</h2>
+                    <div className="Card">
+                        <Chart></Chart>
+                    </div>
+                </article>
+                <article>
+                    <h2 className="title">이동평균선</h2>
+                    <div className="Card">
+                        <Chart></Chart>
+                    </div>
+                </article>
+                <article>
+                    <h2 className="title">볼린저밴드</h2>
+                    <div className="Card">
+                        <Chart></Chart>
+                    </div>
+                </article>
+                <article>
+                    <h2 className="title">RSI</h2>
+                    <div className="Card">
+                        <Chart></Chart>
+                    </div>
+                </article>
+			</div>
             <footer className="Footer">
                 <div className="Ticker">
                     <div>
-                        <span>시장가</span>
+                        <span className="name">시장가</span>
                         <span className="num long">22326.16</span>
                     </div>
                     <div>
-                        <span>진입가</span>
+                        <span className="name">진입가</span>
                         <span className="num bold">21673.16</span>
                     </div>
                     <div>
-                        <span>청산가</span>
+                        <span className="name">청산가</span>
                         <span className="num short">9948.5</span>
                     </div>
                     <div>
-                        <span>미실현손익(ROE %)</span>
+                        <span className="name">미실현손익(ROE %)</span>
                         <span className="num long">299.84%</span>
                     </div>
                     <div>
-                        <span>실현손익</span>
+                        <span className="name">실현손익</span>
                         <span className="num long">299.84XBT</span>
                     </div>
                 </div>

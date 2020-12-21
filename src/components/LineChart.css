@@ -1,0 +1,51 @@
+/* html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+#root,
+.App,
+.chart-area {
+  height: 100%;
+  width: 100%;
+}
+
+.chart-line {
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.chart-marker {
+  position:relative;
+  stroke: #b517ff ;
+  stroke-width: 2;
+  fill: #2e3445;
+  cursor:pointer;
+}
+.chart-marker:hover{
+  stroke: #b517ff ;
+  stroke-width: 2;
+  fill: #ffffff;
+}
+
+.Chart, .chart-area{
+  max-width:100%;
+  min-height:160px;
+}
+
+.domain{
+  stroke:#E1D4E0;
+  opacity:.1;
+}
+g text{
+  fill: #C4B5C3;
+}
+
+@media (max-width: 960px) {
+  .Chart, .chart-area {
+    min-height: 240px;
+  }
+}

@@ -1,6 +1,6 @@
 .Container {
   position: relative;
-  background: #f7f7f7;
+  background: #353B4D;
   min-width: 320px;
   height: 100vh;
   text-align: center;
@@ -50,9 +50,9 @@
   display: inline-block;
 }
 .title {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Circular Std Bold", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  font-weight:normal;
 }
 .title_desc {
   font-size: 20px;
